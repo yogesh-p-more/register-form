@@ -17,7 +17,7 @@ export default function Home() {
       name: "username",
       type: "text",
       label: "username",
-      errorMessage:
+      errormessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
       placeholder:"username",
       pattern: "^[A-Za-z0-9]{3,16}$",
@@ -28,9 +28,8 @@ export default function Home() {
       name: "mail",
       type: "mail",
       label: "Email",
-      errorMessage: "It should be a valid email address!",
+      errormessage: "It should be a valid email address!",
       placeholder:"Email",
-      
       required:true,
     },
     {
@@ -38,7 +37,7 @@ export default function Home() {
       name: "fullname",
       type: "text",
       label: "Full Name",
-      errorMessage:"Type full name",
+      errormessage:"Type full name",
       placeholder:"Full Name",
       required:true,
     },
@@ -47,7 +46,7 @@ export default function Home() {
       name: "password",
       type: "password",
       label: "Password",
-      errorMessage:
+      errormessage:
         "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
       label: "Password",
       placeholder:"Password",
@@ -59,7 +58,7 @@ export default function Home() {
       name: "date",
       type: "date",
       label: "Birth Date",
-      errorMessage:"It should be valid Email ",
+      errormessage:"It should be valid Email ",
       placeholder:"DOB"
     }
   ]
@@ -102,7 +101,7 @@ export default function Home() {
               focused={focused.toString()}
             
             />
-            <span>{any.errorMessage}</span>
+            <span>{any.errormessage}</span>
           </div>
         ))}
 
